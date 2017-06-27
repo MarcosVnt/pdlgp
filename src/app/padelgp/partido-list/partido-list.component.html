@@ -1,0 +1,8 @@
+<msm-partido-detail [selectedPartido]="selectedPartido"> </msm-partido-detail>
+
+
+<div class="container">
+      <div class="row">
+            <msm-partido *ngFor="let partido of partidos" [partido]="partido" (click)="onSelect(partido)"></msm-partido>
+      </div>
+</div>
